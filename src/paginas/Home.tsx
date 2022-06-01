@@ -1,9 +1,11 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import Nav from '../componentes/Nav'
 
 function Home(){
     return(
         <>
+        <Nav paginaAtual="/"></Nav>
         <section className="text-center w-full h-screen border-2 border-black">
                 <h1 className='mt-8 mb-8 text-3xl t'>True Hard Work Always Pays Off</h1>
                 {/*Img Container*/}

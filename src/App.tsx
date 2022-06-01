@@ -14,12 +14,11 @@ import Login from './paginas/Login';
 function App() {
   return (
     <>
-    <Nav></Nav>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/CheckOut" element={<CheckOut />}/>
         <Route path="/Projects" element={<Projects />}/>
-        <Route path="/Store" element={<Contact />}/>
+        <Route path="/Contact" element={<Contact />}/>
         <Route path="/AboutMe" element={<AboutMe />}/>
         <Route path="/Login" element={<Login />}/>
       </Routes>

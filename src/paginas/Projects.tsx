@@ -1,10 +1,14 @@
 import React from "react";
+import Nav from '../componentes/Nav'
 
 function Projects(){
     return(
-        <section className="text-center w-full h-screen border-2 border-black">
-                <h1 className='mt-8 text-3xl t'>Projects</h1>
-        </section>
+        <>
+            <Nav paginaAtual="/Contact"></Nav>
+            <section className="text-center w-full h-screen border-2 border-black">
+                    <h1 className='mt-8 text-3xl t'>Projects</h1>
+            </section>
+        </>
     )
 }
 

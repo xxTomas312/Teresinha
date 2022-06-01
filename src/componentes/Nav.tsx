@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../Img/Logo.jpeg'
 import { Routes, Route, Link } from "react-router-dom";
 
-function Nav(){
+function Nav({paginaAtual}:any){
     return(
         <>
             {/*Main COntainer*/}
@@ -14,22 +14,30 @@ function Nav(){
                     </Link>
                 </section>
                 <section className="buttonsContainer">
-                        <Link className="navButton" to="/Contact">
-                            <h1 className="text-white  -rotate-45">Contact</h1>
+                        <Link className="navFirsttButton" to="/Contact">
+                            <h1 className="navTitulo" style={paginaAtual === '/Contact' ? style : undefined}>Contact</h1>
                         </Link>
                         <Link className="navButton" to="/AboutMe">
-                            <h1 className="text-white  -rotate-45">About</h1>
+                            <h1 className="navTitulo">About</h1>
                         </Link>
                         <Link className="navButton" to="/Projects">
-                            <h1 className="text-white -rotate-45">Projects</h1>
+                            
+                                <h1 className="navTitulo">Projects</h1>
                         </Link>
-                        <Link className="flex text-2xl justify-center items-center ml-12 underline decoration-1" to="/Login">
-                            <h1 className="text-white" >Login</h1>
+                        <Link className="navLoginButton" to="/Login">
+                            <div className="buttonPart1"></div>
+                            <div className="buttonPart2">
+                                <h1 className="textLogin">Login</h1>
+                            </div>
                         </Link>
                 </section>
             </nav>
         </>
     )
+}
+
+const style = {
+    fontWeight: '600'
 }
 
 export default Nav; 

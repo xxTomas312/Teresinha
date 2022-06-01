@@ -1,9 +1,13 @@
 import React from "react";
 
 function Login(){
+
+
+
+
     return(
         <>
-        <body className="flex justify-center items-center">
+        <body className="border-t-2 border-black flex justify-center items-center">
             <section className="flex mt-8 w-4/5">
                 {/* Login Container */}
                 <div className="mr-4 w-1/2">
@@ -17,7 +21,7 @@ function Login(){
                         <input type="email" placeholder=" Enter your email" className="w-3/5 h-12 ml-4 border-2 border-black mb-4"/>
                         <input type="text" placeholder=" Password" className="w-3/5 h-12 ml-4 border-2 border-black mb-6" />
                     </div>
-                    {/* Button Container */}
+                    {/* Login Button Container */}
                     <div className="ml-4">
                         <button className="cursor-pointer w-2/6 h-10">Login</button>
                     </div>
@@ -41,7 +45,7 @@ function Login(){
                             <p className="ml-2 -mt-1">I agree to receive new's from this site.</p>
                         </div>
                     </div>
-                    {/* Button Container */}
+                    {/* Register Button Container */}
                     <div className="ml-4">
                         <button className="cursor-pointer border-2 border-red w-2/6 h-10">Register</button>
                     </div>

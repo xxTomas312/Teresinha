@@ -1,24 +1,99 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url(./Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+ }
 
-nav{
-  
-}
 
+ 
+              /* NavBar CSS */
 .buttonsContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 566px;
 }
 .navButton{
-  transform: rotate(45deg);
+  width: 150px;
+  height: 116px;
+  transform: skew(317deg);
+  background: #241e20;
   border-right: 3px solid white;
-  w
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navFirsttButton{
+  width: 150px;
+  height: 116px;
+  transform: skew(317deg);
+  background: #241e20;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Login Button */
+.navLoginButton{
+  display: flex;
+  color: white;
+}
+.buttonPart1{
+  width: 0;
+  height: 0;
+  border-bottom: 116px solid #241e20;
+  margin-left: -43px;
+  border-left: 91px solid #241e20;
+}
+.buttonPart2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 116px;
+  background: #241e20;
+}
+.navTitulo{
+  color: white;
+  font-size: x-large;
+  font-style: normal;
+  transition: 0.3s ease-in-out;
+}
+.navTitulo:hover{
+  transform: scale(120%);
+
+}
+.textLogin{
+  width: 50px;
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 31px;
+  font-size: x-large;
+  font-style: italic;
+  transition: 0.3s ease-in-out;
+}
+.textLogin:hover{
+  transform: scale(120%);
+  /* animation: hover_text 0.5s forwards ease-in-out; */
+}
+
+/* @keyframes hover_text{
+  0%{}
+  100%{
+    transform: scale(120%);
+  }
+} */
 
 
 
 
+
+ /* EveryButton CSS */
 button{
     align-items: center;
     appearance: none;

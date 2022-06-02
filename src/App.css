@@ -15,7 +15,7 @@
 .navButton{
   width: 150px;
   height: 116px;
-  transform: skew(317deg);
+  transform: skew(330deg);
   background: #241e20;
   border-right: 3px solid white;
 
@@ -26,7 +26,7 @@
 .navFirsttButton{
   width: 150px;
   height: 116px;
-  transform: skew(317deg);
+  transform: skew(330deg);
   background: #241e20;
   border-left: 3px solid white;
   border-right: 3px solid white;
@@ -60,11 +60,11 @@
   color: white;
   font-size: x-large;
   font-style: normal;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-family: 'Times New Roman', Times, serif
 }
 .navTitulo:hover{
   transform: scale(120%);
-
 }
 .textLogin{
   width: 50px;
@@ -75,25 +75,70 @@
   margin-right: 31px;
   font-size: x-large;
   font-style: italic;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .textLogin:hover{
   transform: scale(120%);
-  /* animation: hover_text 0.5s forwards ease-in-out; */
 }
 
-/* @keyframes hover_text{
+
+                  /* HomePage CSS*/
+
+.home_img_1, .home_img_2, .home_img_3{
+  z-index: -1; 
+  width: 500px;
+  height: auto;
+  transform: rotate(20deg);
+  border: 2px solid black;
+  
+  margin-left: 24px;
+
+}
+.home_AboutMe_Container{
+  width: 35%;
+  height: auto;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #241e20;
+  background-color: white;
+
+}
+
+
+            /* Footer CSS */
+
+.Media_container{
+  display: flex;
+  justify-content: center;
+}
+.icon_container{
+  border-radius: 20%;
+  width: 42px;
+  background-color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+}
+.icon_container:hover{
+  animation: rollingIcon 0.7s ease;
+}
+@keyframes rollingIcon{
   0%{}
-  100%{
-    transform: scale(120%);
-  }
-} */
+  100%{transform: rotate(360deg);}
+}
+.icon_container{
+
+}
 
 
 
 
 
- /* EveryButton CSS */
+
+
+ /* Every Button CSS */
 button{
     align-items: center;
     appearance: none;

@@ -1,12 +1,11 @@
 import React from "react";
+import Nav from '../componentes/Nav';
+
 
 function Login(){
-
-
-
-
     return(
         <>
+        <Nav paginaAtual="/Contact"></Nav>
         <body className="border-t-2 border-black flex justify-center items-center">
             <section className="flex mt-8 w-4/5">
                 {/* Login Container */}

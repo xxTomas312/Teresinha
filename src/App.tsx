@@ -1,7 +1,6 @@
 import React from 'react';
 import CheckOut from './paginas/CheckOut'
 import './App.css';
-import Nav from './componentes/Nav';
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./paginas/Home"
 import Projects from "./paginas/Projects"

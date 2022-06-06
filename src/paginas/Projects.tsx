@@ -1,13 +1,24 @@
 import React from "react";
 import Nav from '../componentes/Nav'
+import Footer from '../componentes/Footer'
 
 function Projects(){
     return(
         <>
-            <Nav paginaAtual="/Contact"></Nav>
-            <section className="text-center w-full h-screen border-2 border-black">
-                    <h1 className='mt-8 text-3xl t'>Projects</h1>
+            <Nav paginaAtual="/Projects"></Nav>
+            <section className="flex justify-center items-center w-full border-2 border-black">
+                    <div className="grid_container">
+                        <div className="grid_item"></div>
+                        <div className="grid_item"></div>
+                        <div className="grid_item"></div>
+                        <div className="grid_item"></div>
+                        <div className="grid_item"></div>
+                        <div className="grid_item"></div>
+                        <div className="grid_item"></div>
+                        <div className="grid_item"></div>
+                    </div>
             </section>
+            <Footer></Footer>
         </>
     )
 }

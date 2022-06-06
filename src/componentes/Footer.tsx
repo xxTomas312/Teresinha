@@ -15,25 +15,25 @@ export default function Footer() {
             {/* Social Media Container*/}
             <section className="flex mt-2">
                 {/* Facebook Icon */}
-                <div className="icon_container">
+                <a href="https://www.facebook.com/Sal%C3%A3o-de-Cabeleireira-Terezinha-101560624919091/"className="icon_container">
                     <img src={Facebook} className="footer_icons"/>
-                </div>
+                </a>
                 {/* Instagram Icon */}
-                <div className="icon_container">
+                <a href="https://www.instagram.com/ritual_terezinha/"className="icon_container">
                     <img src={Instagram} className="footer_icons"/>
-                </div>
+                </a>
                 {/* Msgr Icon */}
-                <div className="icon_container">
+                <a className="icon_container">
                     <img src={Msgr} className="footer_icons"/>
-                </div>
+                </a>
                 {/* WhatsApp Icon */}
-                <div className="icon_container">
+                <a className="icon_container">
                     <img src={Whatsapp} className="footer_icons"/>
-                </div>
+                </a>
             </section>
         </div>
     </footer>
-    </>)
+    </>) 
 }
 
 const style = {

@@ -18,16 +18,16 @@ function Nav({paginaAtual}:any){
                             <h1 className="navTitulo" style={paginaAtual === '/Contact' ? style : undefined}>Contact</h1>
                         </Link>
                         <Link className="navButton" to="/AboutMe">
-                            <h1 className="navTitulo">About</h1>
+                            <h1 className="navTitulo" style={paginaAtual === '/AboutMe' ? style : undefined}>About</h1>
                         </Link>
                         <Link className="navButton" to="/Projects">
                             
-                                <h1 className="navTitulo">Projects</h1>
+                                <h1 className="navTitulo" style={paginaAtual === '/Projects' ? style : undefined}>Projects</h1>
                         </Link>
-                        <Link className="navLoginButton" to="/Login">
+                        <Link className="navBlogButton" to="/Blog">
                             <div className="buttonPart1"></div>
                             <div className="buttonPart2">
-                                <h1 className="textLogin">Login</h1>
+                                <h1 className="textBlog" style={paginaAtual === '/Blog' ? style : undefined}>Blogs</h1>
                             </div>
                         </Link>
                 </section>
@@ -39,5 +39,4 @@ function Nav({paginaAtual}:any){
 const style = {
     fontWeight: '600'
 }
-
 export default Nav; 

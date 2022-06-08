@@ -6,7 +6,7 @@ import Home from "./paginas/Home"
 import Projects from "./paginas/Projects"
 import Contact from './paginas/Contact';
 import AboutMe from './paginas/AboutMe';
-import Login from './paginas/Login';
+import Blog from './paginas/Blog';
 
 
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/Projects" element={<Projects />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/AboutMe" element={<AboutMe />}/>
-        <Route path="/Login" element={<Login />}/>
+        <Route path="/Blog" element={<Blog />}/>
       </Routes>
     </>
   );

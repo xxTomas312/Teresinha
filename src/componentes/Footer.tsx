@@ -23,7 +23,7 @@ export default function Footer() {
                     <img src={Instagram} className="footer_icons"/>
                 </a>
                 {/* Msgr Icon */}
-                <a className="icon_container">
+                <a href="https://api.whatsapp.com/send?phone=15551234567" className="icon_container">
                     <img src={Msgr} className="footer_icons"/>
                 </a>
                 {/* WhatsApp Icon */}

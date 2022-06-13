@@ -3,6 +3,17 @@
   src: url(./Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
  }
 
+ :root {
+   --mainColor: #241E20;
+   --buttonColor: #3B2D1F;
+   --black: black;
+   --black2: #0000009c;
+   --white: white;
+   --textColor: #FEFEFE;
+
+   --normal: x-large;
+   --big: xx-large;
+ }
 
 /* COMPONENTES UTILIZADOS POR TODO O WEBSITE */
 
@@ -15,51 +26,14 @@
 }
 .navButton{
   width: 150px;
-  height: 116px;
-  transform: skew(330deg);
-  background: #241e20;
-  border-right: 3px solid white;
-  border-bottom: 3px solid black;
-
+  height: 116px;  
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.navFirsttButton{
-  width: 150px;
-  height: 116px;
-  transform: skew(330deg);
-  background: #241e20;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
-  border-bottom: 3px solid black;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navBlogButton{
-  display: flex;
-  color: white;
-}
-.buttonPart1{
-  width: 0;
-  height: 0;
-  border-bottom: 116px solid #241e20;
-  margin-left: -43px;
-  border-left: 91px solid #241e20;
-}
-.buttonPart2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 116px;
-  background: #241e20;
 }
 .navTitulo{
-  color: white;
-  font-size: x-large;
+  color: var(--textColor);
+  font-size: var(--normal);
   font-style: normal;
   transition: 0.2s ease-in-out;
   font-family: 'Times New Roman', Times, serif
@@ -67,21 +41,6 @@
 .navTitulo:hover{
   transform: scale(120%);
 }
-.textBlog{
-  width: 50px;
-  height: 116px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 31px;
-  font-size: x-large;
-  font-style: italic;
-  transition: 0.2s ease-in-out;
-}
-.textBlog:hover{
-  transform: scale(120%);
-}
-
 
 /*-FOOTER-*/
 .Media_container{
@@ -91,7 +50,7 @@
 .icon_container{
   border-radius: 30%;
   width: 46px;
-  background-color: white;
+  background-color: var(--white);
   margin-left: 5px;
   margin-right: 5px;
   padding: 4px;
@@ -105,19 +64,19 @@
 }
  
 
- /*-QUALQUER BUTÃO UTILIZADO NO WEBSITE-*/
+ /*-BUTÃO-*/
  button{
   align-items: center;
   appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background-color: var(--mainColor);
   border: 0;
   border-radius: 6px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "Open Sans', sans-serif";
   height: 48px;
   justify-content: center;
   line-height: 1;
@@ -134,23 +93,19 @@
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow,transform;
-  font-size: 18px;
+  font-size: var(--normal);
 }
-
 button:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: var(--textColor) ;
 }
-
 button:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: var(--mainColor);
   transform: translateY(-2px);
 }
-
 button:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
+  box-shadow: var(--textColor);
   transform: translateY(2px);
 }
-
 
 
 
@@ -158,23 +113,53 @@ button:active {
 
 /*-HOMEPAGE-*/
 .home_img_1, .home_img_2, .home_img_3{
-  z-index: -1; 
-  width: 500px;
+  width: 314px;
   height: auto;
-  transform: rotate(20deg);
-  border: 2px solid black;
-  
-  margin-left: 24px;
+  background-repeat: no-repeat;
 }
-.home_AboutMe_Container{
-  width: 35%;
-  height: auto;
-  border: 2px solid black;
+.home_mainContainer{
+  width: 100%;
+  height: 100%;
+}
+.home_titleContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #241e20;
-  background-color: white;
+
+  font-size: var(--big);
+
+  margin-top: 10px;
+
+  height: 110px;
+  background-color: var(--white);
+}
+.home_AboutMeContainer{
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mainColor);;
+  background-image: url(/src/Img/background1.jpeg);
+}
+/* First Home Container */
+.home_imgContainer_1{
+  padding: 100px;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/src/Img/background1.jpeg);
+  z-index: -1;
+}
+
+/* Second Home Container */
+/*Button To Switch Backgrounds*/
+.switch{
+  width: 5px;
+  height: 30px;
+  background-color: red;
+  border-radius: 60%;
+  background-image: url(/src/Img/background1.jpeg);
 }
 
 
@@ -199,12 +184,13 @@ button:active {
   margin-bottom: 30px;
 }
 .grid_item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid var(--black);
   height: 310.5px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
+
 /*-CONTACT-*/
 .contact_container{
   display:flex;
@@ -212,7 +198,30 @@ button:active {
   align-items: center;
   height: 753px;
 
-  border-top: 2px solid black;
+  border-top: 2px solid var(--black);
+}
+/*When Alert Activated*/
+.contact_alert{
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black2);
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+ } 
+
+.contact_box{
+  width: 420px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
 }
 
 /*-BLOG-*/
@@ -222,8 +231,8 @@ button:active {
   width: 50%;
   display: flex;
   align-items: center;
-  border-right: 2px solid black;
-  border-left: 2px solid black;  
+  border-right: 2px solid var(--black);
+  border-left: 2px solid var(--black);  
 }
 .post_container{
   flex-direction: column;
@@ -231,9 +240,9 @@ button:active {
   width: 80%;
   display: flex;
   align-items: center;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  border-top: 2px solid black; 
+  border-right: 2px solid var(--black);
+  border-left: 2px solid var(--black);
+  border-top: 2px solid var(--black); 
 }
 
 

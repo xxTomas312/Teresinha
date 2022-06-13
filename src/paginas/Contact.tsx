@@ -1,18 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../componentes/Nav";
 import Footer from "../componentes/Footer";
 
-function Contact() {
-    
-    function Alert() {
-        let name = document.getElementById('name')
-        let email = document.getElementById('email')
-        let message = document.getElementById('message')
+function Contact() {    
+  const [aberto, setAberto] = useState(false);
+  const [form, setForm] = useState ({
+    nome:'',
+    email:'',
+    message:'',
+  })
 
-        
-        console.log("ola");
-        alert("Message Was Send");
-    }
   return (
     <>
       <Nav paginaAtual="/Contact"></Nav>
@@ -39,9 +36,19 @@ function Contact() {
             placeholder="Message"
             className="border-2 border-black w-4/5 h-52 mb-8 pl-2"
           ></textarea>
-          <button onClick={Alert}>SEND</button>
+          <button onClick={()=> setAberto(true)}>SEND</button>
         </div>
       </section>
+
+      {aberto ? <section className="contact_alert" id="contact_alert">
+        <div className="contact_box">
+          <h1 className="text-2xl">Your message was sent successfully</h1>
+          <p className="mb-2 mt-4">Click here to go back</p>
+          <button onClick={()=> setAberto(false)}>Here</button>
+        </div>
+      </section> : null}
+
+      
       <Footer></Footer>
     </>
   );

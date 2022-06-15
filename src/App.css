@@ -56,11 +56,11 @@
   padding: 4px;
 }
 .icon_container:hover{
-  animation: rollingIcon 0.7s ease;
+  animation: rollingIcon 0.3s forwards;
 }
 @keyframes rollingIcon{
   0%{}
-  100%{transform: rotate(360deg);}
+  100%{transform: scale(110%);}
 }
  
 

@@ -19,7 +19,7 @@ export default function Footer() {
                     <img src={Facebook} className="footer_icons"/>
                 </a>
                 {/* Instagram Icon */}
-                <a href="https://www.instagram.com/ritual_terezinha/"className="icon_container">
+                <a href="https://www.instagram.com/ritual_terezinha/" className="icon_container">
                     <img src={Instagram} className="footer_icons"/>
                 </a>
                 {/* Msgr Icon */}
@@ -27,9 +27,9 @@ export default function Footer() {
                     <img src={Msgr} className="footer_icons"/>
                 </a>
                 {/* WhatsApp Icon */}
-                <a className="icon_container">
+                <button className="icon_container">
                     <img src={Whatsapp} className="footer_icons"/>
-                </a>
+                </button>
             </section>
         </div>
     </footer>

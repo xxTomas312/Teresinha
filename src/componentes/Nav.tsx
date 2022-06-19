@@ -20,11 +20,11 @@ function Nav({paginaAtual}:any){
                         <Link className="navButton" to="/AboutMe">
                             <h1 className="navTitulo" style={paginaAtual === '/AboutMe' ? style : undefined}>About</h1>
                         </Link>
-                        <Link className="navButton" to="/Projects">
-                            <h1 className="navTitulo" style={paginaAtual === '/Projects' ? style : undefined}>Services</h1>
+                        <Link className="navButton" to="/Services">
+                            <h1 className="navTitulo" style={paginaAtual === '/Services' ? style : undefined}>Services</h1>
                         </Link>
-                        <Link className="navButton" to="/Blog">
-                            <h1 className="navTitulo" style={paginaAtual === '/Blog' ? style : undefined}>Blogs</h1>
+                        <Link className="navButton" to="/Review">
+                            <h1 className="navTitulo" style={paginaAtual === '/Review' ? style : undefined}>Reviews</h1>
                         </Link>
                 </section>
             </nav>

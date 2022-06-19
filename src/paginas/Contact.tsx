@@ -19,9 +19,9 @@ function Contact() {
   return (
     <>
       <Nav paginaAtual="/Contact"></Nav>
-        <section className="contact_container">
-            <div className="flex flex-col items-center border-l-2 border-r-2 border-black w-1/2 h-full">
-              <h1 className="text-4xl mt-24 mb-6">Contact Me</h1>
+        <section className="contact_body">
+            <div className="flex flex-col justify-center items-center items-center w-1/2 h-full">
+              <h1 className="titulos">Contact Me</h1>
               {/*-Name-*/}
               <input
                 id="name"
@@ -50,7 +50,7 @@ function Contact() {
             <div className="contact_box">
               <h1 className="text-2xl">Your message was sent successfully</h1>
               <p className="mb-2 mt-4">Click "here" to go back</p>
-              <button onClick={()=> setAberto(false)}>Here</button>
+              <button className="mt-4"onClick={()=> setAberto(false)}>Here</button>
             </div>
           </section> : null}
         <Footer></Footer>

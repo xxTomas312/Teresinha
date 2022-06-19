@@ -7,13 +7,13 @@ function AboutMe(){
     return(
         <>
         <Nav paginaAtual="/AboutMe" ></Nav>
-        <section className="flex border-t-2 border-black">
-                <div className="flex flex-col ml-6 mt-16 w-1/2">
+        <section className="about_body ">
+                <div className="about_Container">
                     <h1 className="About_titulo">Hello!</h1>
                     <h1 className="About_titulo">My Name is Teresa Gonçalves</h1>
-                    <p className="w-4/6 mt-4 w-1/2">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                    <p className="About_p">bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
                 </div>
-                <img src={BgImg2} className="aboutMe_img"/>
+                    <img src={BgImg2} className="aboutMe_img"/>
         </section>
         <Footer></Footer>
         </>

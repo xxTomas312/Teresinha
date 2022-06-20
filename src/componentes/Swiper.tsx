@@ -3,6 +3,7 @@ import { getRefValue, useSatateRef } from '../lib/hooks';
 import { SwiperItemType } from '../types';
 import './Swiper.css';
 import SwiperItem from './SwiperItem';
+import Nav from '../componentes/Nav';
 
 export type Props = {
   items: Array<SwiperItemType>;

@@ -18,6 +18,7 @@
 .titulos {
   font-size: 40px;
   margin-bottom: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*-NAVBAR-*/
@@ -39,7 +40,7 @@
   font-size: var(--normal);
   font-style: normal;
   transition: 0.2s ease-in-out;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .navTitulo:hover {
   transform: scale(120%);
@@ -57,6 +58,7 @@
   margin-left: 5px;
   margin-right: 5px;
   padding: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .icon_container:hover {
   animation: rollingIcon 0.3s forwards;
@@ -81,7 +83,7 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "Open Sans', sans-serif";
+  font-family: 'Source Sans Pro', sans-serif;
   height: 48px;
   justify-content: center;
   line-height: 1;
@@ -113,7 +115,6 @@ button:active {
 }
 
 /*-PÁGINAS UITLIZADAS NO WEBSITE-*/
-
 /* ALTURA DAS PÁGINAS */
 .about_body,
 .services_body,
@@ -211,18 +212,30 @@ button:active {
 .grid_item {
   border: 1px solid var(--black);
   height: 310.5px;
-  padding: 20px;
   font-size: 30px;
   text-align: center;
 }
 .grid_item:hover {
   animation: services_hover 0.4s forwards;
 }
+.grid_img_1,
+.grid_img_2,
+.grid_img_3,
+.grid_img_4,
+.grid_img_5,
+.grid_img_6,
+.grid_img_7,
+.grid_img_8 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 @keyframes services_hover {
   0% {
   }
   100% {
-    background-color: var(--black2);
+    opacity: 60%;
   }
 }
 
@@ -231,7 +244,6 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-
   border-top: 2px solid var(--black);
 }
 /*When Alert Activated*/
@@ -289,4 +301,32 @@ button:active {
   display: flex;
   align-items: center;
   border: 3px solid var(--black);
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.test {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
+  padding: 10px;
+  border: 2px solid black;
+  width: 100%;
+  margin: 20px;
+}
+.review_message {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.review_name {
+  width: 80%;
+  margin-bottom: 10px;
+  text-decoration: underline;
 }

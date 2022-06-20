@@ -1,44 +1,64 @@
-import React, {useState} from "react";
+import React, { useState } from 'react';
 import Nav from '../componentes/Nav';
-import Footer from '../componentes/Footer'
+import Footer from '../componentes/Footer';
+import { OpenDirOptions } from 'fs';
 
-function Review(){
-    const [opinion, setOpinion] = useState<string>('')
-    const [allOpinions, setAllOpinions] = useState<any>([])
+interface OpinionModel {
+  name: string;
+  message: string;
+}
 
-    function addOpinion(){
-        setAllOpinions([...allOpinions, opinion])
-        setOpinion('')
-    }
+function Review() {
+  const [opinion, setOpinion] = useState<string>('');
+  const [name, setName] = useState<string>('');
+  const [allOpinions, setAllOpinions] = useState<OpinionModel[]>([]);
 
-    return(
-        <>
-        <Nav paginaAtual="/Review"></Nav>
-        <section className="review_body">
-           <section className="review_MainContainer">
-                <section className="review_Container_1">
-                    <h1 className="titulos">Write your Opinion</h1>
-                    <input placeholder="Name" className="border-2 border-black w-4/5 h-16     mb-8 pl-2" onChange={(e) => setOpinion(e.target.value)}></input>
-                    <textarea placeholder="Message"className="border-2 border-black w-4/5 h-64 mb-8 pl-2" onChange={(e) => setOpinion(e.target.value)}></textarea>
-                    <button className="mb-8 w-52" onClick={()=> addOpinion()}>Submit</button>
-               </section>    
-               <section className="review_Container_2">
-                <h1 className="titulos">Clients Opinion</h1>
-                <section className="post_container">
-                        <div className="test">
-                            {allOpinions.map((opinion:string, index : any) => (
-                                <div className="flex justify-center border-2 border-black p-8 m-4">
-                                    <h3 key={index}>{opinion}</h3>
-                                </div>
-                            ))}
-                        </div>
-                </section>
-               </section>
-           </section>
+  function addOpinion() {
+    let x = { name: name, message: opinion };
+    setAllOpinions([...allOpinions, x]);
+    setOpinion('');
+  }
+
+  return (
+    <>
+      <Nav paginaAtual="/Review"></Nav>
+      <section className="review_body">
+        <section className="review_MainContainer">
+          <section className="review_Container_1">
+            <h1 className="titulos">Write your Opinion</h1>
+            <input
+              placeholder="Name"
+              className="border-2 border-black w-4/5 h-16 mb-8 pl-2"
+              onChange={(e) => setName(e.target.value)}
+            ></input>
+            <textarea
+              placeholder="Message"
+              className="border-2 border-black w-4/5 h-64 mb-8 pl-2"
+              onChange={(e) => setOpinion(e.target.value)}
+            ></textarea>
+            <button className="mb-8 w-52" onClick={() => addOpinion()}>
+              Submit
+            </button>
+          </section>
+
+          <section className="review_Container_2">
+            <h1 className="titulos">Clients Opinion</h1>
+            <section className="post_container">
+              <div className="test">
+                {allOpinions.map((opinionModel: OpinionModel, index: any) => (
+                  <div className="review_box">
+                    <h1 className="review_name">{opinionModel.name}</h1>
+                    <h2 className="review_message">{opinionModel.message}</h2>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </section>
         </section>
-        <Footer></Footer>
-        </>
-    )
+      </section>
+      <Footer></Footer>
+    </>
+  );
 }
 
 export default Review;

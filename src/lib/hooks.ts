@@ -22,7 +22,6 @@ export function useSatateRef<S>(
 //
 //  const number = getRefValue(numberRef)
 //}
-
 //Desta Maneira number = a um numero//
 
 // function SampleComponent(){
@@ -30,5 +29,4 @@ export function useSatateRef<S>(
 //
 //  const number = getRefValue(numberRef)
 //}
-
 //Desta Maneira number = a uma string//

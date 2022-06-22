@@ -15,8 +15,8 @@ function Review() {
 
   function addOpinion() {
     let x = { name: name, message: opinion };
-    setAllOpinions([...allOpinions, x]);
     setOpinion('');
+    setAllOpinions([...allOpinions, x]);
   }
 
   return (
@@ -45,7 +45,7 @@ function Review() {
             <h1 className="titulos">Clients Opinion</h1>
             <section className="post_container">
               <div className="test">
-                {allOpinions.map((opinionModel: OpinionModel, index: any) => (
+                {allOpinions.map((opinionModel: OpinionModel) => (
                   <div className="review_box">
                     <h1 className="review_name">{opinionModel.name}</h1>
                     <h2 className="review_message">{opinionModel.message}</h2>

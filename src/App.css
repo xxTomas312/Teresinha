@@ -6,6 +6,7 @@
   --white: white;
   --textColor: #fefefe;
 
+  --small: large;
   --normal: x-large;
   --big: xx-large;
 
@@ -163,11 +164,11 @@ button:active {
   transform: translateY(-2px);
 }
 
-/*-ABOUT ME-*/
+/*-ABOUT ME PAGE-*/
 .about_body {
   display: flex;
 }
-.About_titulo {
+.about_titulo {
   font-size: var(--big);
   font-family: 'Open Sans', sans-serif;
 }
@@ -183,13 +184,23 @@ button:active {
   justify-content: center;
   width: 65%;
 }
-.About_p {
+.about_p,
+.about_p_2 {
   font-family: 'Open Sans', sans-serif;
   width: 60%;
   margin-top: 14px;
+  text-align: center;
+}
+.about_p {
+  font-size: var(--normal);
+}
+.about_p_2 {
+  margin-top: 30px;
+  font-size: var(--small);
+  text-decoration: underline;
 }
 
-/*-SERVICES-*/
+/*-SERVICES PAGE-*/
 .services_body {
   display: flex;
   justify-content: center;
@@ -239,7 +250,7 @@ button:active {
   }
 }
 
-/*-CONTACT-*/
+/*-CONTACT PAGE-*/
 .contact_body {
   display: flex;
   justify-content: center;
@@ -270,7 +281,7 @@ button:active {
   align-items: center;
 }
 
-/*-REVIEW-*/
+/*-REVIEW PAGE-*/
 .review_MainContainer {
   display: flex;
   align-items: center;

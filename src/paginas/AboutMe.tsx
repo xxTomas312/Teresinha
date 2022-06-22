@@ -13,7 +13,7 @@ function AboutMe() {
           <h1 className="about_titulo">Hello!</h1>
           <h1 className="about_titulo">My Name is Teresa Gonçalves</h1>
           <p className="about_p">
-            I am a professionally trained hairdresser, looking to be better day
+            I'm a professionally trained hairdresser, looking to be better day
             by day, improving my skills to make my clients more beautiful and
             stylish.
           </p>

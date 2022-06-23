@@ -5,4 +5,23 @@ export const data = [
     id: 1,
     image: require('../Img/plasticaCapilar.jpeg'),
   },
+  {
+    id: 1,
+    image: require('../Img/plasticaCapilar.jpeg'),
+  },
+
+  {
+    id: 1,
+    image: require('../Img/plasticaCapilar.jpeg'),
+  },
+
+  {
+    id: 1,
+    image: require('../Img/plasticaCapilar.jpeg'),
+  },
+
+  {
+    id: 1,
+    image: require('../Img/plasticaCapilar.jpeg'),
+  },
 ];

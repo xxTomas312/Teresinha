@@ -3,7 +3,7 @@ import SmallerLogo from '../Img/smallLogo.jpeg';
 import Facebook from '../Icons/facebook.png';
 import Instagram from '../Icons/instagram.png';
 import Whatsapp from '../Icons/whatsapp.png';
-import Msgr from '../Icons/msgr.png';
+import '../css/Footer.css';
 
 export default function Footer() {
   return (

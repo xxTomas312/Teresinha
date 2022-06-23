@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../componentes/Nav';
 import Footer from '../componentes/Footer';
+import '../css/AboutMe.css';
 import BgImg2 from '../Img/background2.jpeg';
 import { Routes, Route, Link } from 'react-router-dom';
 

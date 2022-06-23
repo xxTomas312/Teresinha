@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
+import '../css/Home.css';
 import Nav from '../componentes/Nav';
-import Footer from '../componentes/Footer';
 import Swiper from '../componentes/Swiper';
 import { SwiperItemType } from '../types';
 import pic1 from '../Img/pic1.jpg';

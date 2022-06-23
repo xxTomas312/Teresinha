@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { getRefValue, useSatateRef } from '../lib/hooks';
 import { SwiperItemType } from '../types';
-import './Swiper.css';
+import '../css/Swiper.css';
 import SwiperItem from './SwiperItem';
 
 export interface Props {

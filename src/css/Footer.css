@@ -1,0 +1,38 @@
+:root {
+  --mainColor: #241e20;
+  --buttonColor: #3b2d1f;
+  --black: black;
+  --black2: #0000009c;
+  --white: white;
+  --textColor: #fefefe;
+
+  --small: large;
+  --normal: x-large;
+  --big: xx-large;
+  --large: 100px;
+}
+
+/*-FOOTER-*/
+.Media_container {
+  display: flex;
+  justify-content: center;
+}
+.icon_container {
+  border-radius: 30%;
+  width: 46px;
+  background-color: var(--white);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.icon_container:hover {
+  animation: hover 0.3s forwards;
+}
+@keyframes hover {
+  0% {
+  }
+  100% {
+    transform: scale(110%);
+  }
+}

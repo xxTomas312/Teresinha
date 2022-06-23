@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Nav from '../componentes/Nav';
 import Footer from '../componentes/Footer';
+import '../css/Contact.css';
 import { Console } from 'console';
 
 function Contact() {

@@ -1,0 +1,64 @@
+:root {
+  --black: black;
+}
+
+/*-REVIEW PAGE-*/
+.review_MainContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.review_Container_1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.review_Container_2 {
+  padding: 5px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post_container {
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--black);
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.test {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word;
+  padding: 10px;
+  border: 2px solid var(--black);
+  width: 100%;
+  margin: 20px;
+}
+.review_message {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.review_name {
+  width: 80%;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}

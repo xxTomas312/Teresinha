@@ -1,0 +1,46 @@
+:root {
+  --mainColor: #241e20;
+  --buttonColor: #3b2d1f;
+  --black: black;
+  --black2: #0000009c;
+  --white: white;
+  --textColor: #fefefe;
+
+  --small: large;
+  --normal: x-large;
+  --big: xx-large;
+  --large: 100px;
+}
+
+/*-CONTACT PAGE-*/
+.contact_body {
+  height: 827px;
+}
+.contact_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--black);
+}
+/*When Alert Activated*/
+.contact_box {
+  width: 420px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
+}
+.contact_alert {
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

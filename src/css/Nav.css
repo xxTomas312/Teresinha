@@ -1,0 +1,20 @@
+:root {
+  --normal: x-large;
+}
+
+/*-NAVBAR-*/
+.buttonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+}
+.navTitulo {
+  color: var(--textColor);
+  font-size: var(--normal);
+  font-style: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.navTitulo:hover {
+  font-weight: 1000;
+}

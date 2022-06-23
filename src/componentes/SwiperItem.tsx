@@ -1,6 +1,6 @@
 import React from 'react';
 import { SwiperItemType } from '../types';
-import './SwiperItem.css';
+import '../css/SwiperItem.css';
 
 function SwiperItem({ imageSrc, imageAlt, elements }: SwiperItemType) {
   return (

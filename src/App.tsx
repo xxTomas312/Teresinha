@@ -6,7 +6,6 @@ import Services from './paginas/Services';
 import Contact from './paginas/Contact';
 import AboutMe from './paginas/AboutMe';
 import Review from './paginas/Review';
-import ServicesComponent from './componentes/ServicesComponent';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="/Review" element={<Review />} />
-        <Route path="/teste" element={<ServicesComponent />} />
       </Routes>
     </>
   );

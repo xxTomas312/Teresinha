@@ -1,6 +1,21 @@
+:root {
+  --mainColor: #241e20;
+  --buttonColor: #3b2d1f;
+  --black: black;
+  --black2: #0000009c;
+  --white: white;
+  --textColor: #fefefe;
+
+  --small: large;
+  --normal: x-large;
+  --big: xx-large;
+  --large: larger;
+}
+
 /*Esconder ScrollBar*/
 ::-webkit-scrollbar {
   width: 0;
+  font-size: ;
 }
 
 /* COMPONENTES UTILIZADOS POR TODO O WEBSITE */

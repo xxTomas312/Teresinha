@@ -43,42 +43,69 @@
   width: 300px;
   height: 300px;
 
-  background-image: url('../Img/brushingOndas.jpeg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.grid_item > img {
+.grid_text_hover {
+  opacity: 0%;
   width: 100%;
   height: 100%;
+  border: 2ps solid red;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid_text_hover:hover {
+  animation: show 0.3s forwards;
 }
 
-.caption_hover {
-}
-.caption_hover:hover {
-}
-
-.plastica_capilar {
-  content: 'ola';
-}
-.plastica_capilar:hover {
-  content: 'fadjãpj';
-  opacity: 60%;
-  color: var(--black);
-}
-.cor_brushing_ondas {
+@keyframes show {
+  0% {
+  }
+  100% {
+    opacity: 100%;
+    background-color: var(--black2);
+    color: var(--textColor);
+  }
 }
 
-.grid_img_1,
-.grid_img_2,
-.grid_img_3,
-.grid_img_4,
-.grid_img_5,
-.grid_img_6,
-.grid_img_7,
-.grid_img_8 {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+#plasticaCapilar {
+  background-image: url('../Img/plasticaCapilar.jpeg');
 }
+#BrushingOndas {
+  background-image: url('../Img/brushingOndas.jpeg');
+}
+#BrushingSteampod {
+  background-image: url('../Img/brushingSteampod.jpeg');
+}
+/*#Ondas {
+  background-image: url('../Img/');
+}
+#californianasOmbre {
+  background-image: url('../Img/');
+}
+#alteracaoCor {
+  background-image: url('../Img/');
+}
+#blocosCor {
+  /background-image: url('../Img/');
+}
+#corteHomem {
+  background-image: url('../Img/');
+}
+#corteCriança {
+  background-image: url('../Img/');
+}
+#alisamento {
+  background-image: url('../Img/');
+}
+#penteadosNoiva {
+  background-image: url('../Img/');
+}
+#madeixas {
+  background-image: url('../Img/');
+}*/

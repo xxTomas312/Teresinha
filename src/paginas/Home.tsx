@@ -15,32 +15,81 @@ const Home = () => {
       imageSrc: pic1,
       imageAlt: 'First Background',
       elements: (
-        <div className="home_element_container">
-          <h1 className="home_element_container_title">
-            Let Your Hair Do THe Talking
-          </h1>
-        </div>
+        <>
+          <div className="home_element_container_1">
+            <div className="home_element_title_container">
+              <h1 className="home_element_title">Don't Talk too much</h1>
+              <h1 className="home_element_title">
+                Let Your Hair Do The Talking
+              </h1>
+            </div>
+          </div>
+        </>
       ),
     },
     {
       imageSrc: pic2,
       imageAlt: 'Second Background',
-      elements: <></>,
+      elements: (
+        <>
+          <div className="home_element_container_2">
+            <div className="home_element_title_container">
+              <h1 className="home_element_title">Don't Talk too much</h1>
+              <h1 className="home_element_title">
+                Let Your Hair Do The Talking
+              </h1>
+            </div>
+          </div>
+        </>
+      ),
     },
     {
       imageSrc: pic3,
       imageAlt: 'Third Background',
-      elements: <></>,
+      elements: (
+        <>
+          <div className="home_element_container_3">
+            <div className="home_element_title_container">
+              <h1 className="home_element_title">Don't Talk too much</h1>
+              <h1 className="home_element_title">
+                Let Your Hair Do The Talking
+              </h1>
+            </div>
+          </div>
+        </>
+      ),
     },
     {
       imageSrc: pic4,
       imageAlt: 'Fourth Background',
-      elements: <></>,
+      elements: (
+        <>
+          <div className="home_element_container_4">
+            <div className="home_element_title_container">
+              <h1 className="home_element_title">Don't Talk too much</h1>
+              <h1 className="home_element_title">
+                Let Your Hair Do The Talking
+              </h1>
+            </div>
+          </div>
+        </>
+      ),
     },
     {
       imageSrc: pic5,
       imageAlt: 'Fifth Background',
-      elements: <></>,
+      elements: (
+        <>
+          <div className="home_element_container_5">
+            <div className="home_element_title_container">
+              <h1 className="home_element_title">Don't Talk too much</h1>
+              <h1 className="home_element_title">
+                Let Your Hair Do The Talking
+              </h1>
+            </div>
+          </div>
+        </>
+      ),
     },
   ];
 

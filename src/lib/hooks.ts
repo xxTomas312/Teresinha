@@ -1,4 +1,3 @@
-//Generic Hook
 import { RefObject, useRef, useState } from 'react';
 
 export function getRefValue<C>(ref: RefObject<C>) {
@@ -22,11 +21,9 @@ export function useSatateRef<S>(
 //
 //  const number = getRefValue(numberRef)
 //}
-//Desta Maneira number = a um numero//
 
 // function SampleComponent(){
-//  const numberRef = useRef('string)
+//  const numberRef = useRef('string')
 //
 //  const number = getRefValue(numberRef)
 //}
-//Desta Maneira number = a uma string//

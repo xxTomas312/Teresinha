@@ -20,7 +20,7 @@ function Nav({ paginaAtual }: any) {
               className="navTitulo"
               style={paginaAtual === '/Contact' ? style : undefined}
             >
-              Contact
+              Contacta-me
             </h1>
           </Link>
           <Link className="navButton" to="/AboutMe">
@@ -28,7 +28,7 @@ function Nav({ paginaAtual }: any) {
               className="navTitulo"
               style={paginaAtual === '/AboutMe' ? style : undefined}
             >
-              About
+              Sobre mim
             </h1>
           </Link>
           <Link className="navButton" to="/Services">
@@ -36,7 +36,7 @@ function Nav({ paginaAtual }: any) {
               className="navTitulo"
               style={paginaAtual === '/Services' ? style : undefined}
             >
-              Services
+              Galeria
             </h1>
           </Link>
           <Link className="navButton" to="/Review">
@@ -44,7 +44,7 @@ function Nav({ paginaAtual }: any) {
               className="navTitulo"
               style={paginaAtual === '/Review' ? style : undefined}
             >
-              Reviews
+              Dá uma Opnião
             </h1>
           </Link>
         </section>

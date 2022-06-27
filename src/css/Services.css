@@ -20,6 +20,15 @@
   height: 1200px;
 }
 
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
 /* GRID FRAME */
 
 .grid_container {
@@ -80,32 +89,32 @@
   background-image: url('../Img/brushingOndas.jpeg');
 }
 #BrushingSteampod {
-  background-image: url('../Img/brushingSteampod.jpeg');
-}
-/*#Ondas {
-  background-image: url('../Img/');
+  background-image: url('../Img/steampod.jpeg');
 }
 #californianasOmbre {
-  background-image: url('../Img/');
+  background-image: url('../Img/californiasombre.jpeg');
 }
 #alteracaoCor {
-  background-image: url('../Img/');
+  background-image: url('../Img/ondas.jpeg');
 }
 #blocosCor {
-  /background-image: url('../Img/');
+  background-image: url('../Img/blocosCor.jpeg');
 }
-#corteHomem {
-  background-image: url('../Img/');
+#cortemulher {
+  background-image: url('../Img/corteMulher.jpeg');
+}
+#cortehomem {
+  background-image: url('../Img/cortehomem.jpeg');
 }
 #corteCriança {
-  background-image: url('../Img/');
+  background-image: url('../Img/criança.webp');
 }
 #alisamento {
-  background-image: url('../Img/');
+  background-image: url('../Img/alisamento.jpeg');
 }
 #penteadosNoiva {
-  background-image: url('../Img/');
+  background-image: url('../Img/penteadonoiva.jpeg');
 }
 #madeixas {
-  background-image: url('../Img/');
-}*/
+  background-image: url('../Img/madeixas.jpeg');
+}

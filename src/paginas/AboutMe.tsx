@@ -11,12 +11,12 @@ function AboutMe() {
       <Nav paginaAtual="/AboutMe"></Nav>
       <section className="about_body ">
         <div className="about_Container">
-          <h1 className="about_titulo">Hello!</h1>
-          <h1 className="about_titulo">My Name is Teresa Gonçalves</h1>
+          <h1 className="about_titulo">Olá!</h1>
+          <h1 className="about_titulo">O meu nome é Teresa Gonçalves</h1>
           <p className="about_p">
-            I'm a professionally trained hairdresser, looking to be better day
-            by day, improving my skills to make my clients more beautiful and
-            stylish.
+            Sou uma cabeleireira procurando ser um dia melhor a cada dia,
+            aprimorando minhas habilidades para deixar minhas clientes mais
+            bonitas e à moda.
           </p>
           <p className="about_p_2">
             If you want to see some of my services, click the button below.

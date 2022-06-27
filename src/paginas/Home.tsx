@@ -18,10 +18,8 @@ const Home = () => {
         <>
           <div className="home_element_container_1">
             <div className="home_element_title_container">
-              <h1 className="home_element_title">Don't Talk too much</h1>
-              <h1 className="home_element_title">
-                Let Your Hair Do The Talking
-              </h1>
+              <h1 className="home_element_title_1">Don't Talk too much</h1>
+              <h1>Let Your Hair Do The Talking</h1>
             </div>
           </div>
         </>

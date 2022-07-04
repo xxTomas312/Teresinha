@@ -39,7 +39,7 @@
 
 /* RESPONSIVE */
 /*Tablet*/
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .home_element_title {
     font-size: var(--big);
   }

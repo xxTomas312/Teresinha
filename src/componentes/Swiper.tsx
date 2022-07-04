@@ -39,6 +39,7 @@ function Swiper({ items }: Props) {
 
     setOffsetX(newOffsetX);
   };
+
   const onTouchEnd = () => {
     const containerWidth = getRefValue(containerWidthRef);
     const currentOffsetX = getRefValue(currentOffsetXRef);

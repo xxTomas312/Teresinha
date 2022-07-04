@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Home.css';
 import Nav from '../componentes/Nav';
+import Footer from '../componentes/Footer';
 import Swiper from '../componentes/Swiper';
 import { SwiperItemType } from '../types';
 
@@ -27,11 +28,15 @@ const Home = () => {
       elements: (
         <>
           <div className="home_element_container_1">
-            <div className="home_element_title_container">
+            <div className="home_element_title_container_1">
               <h1 className="home_element_title_1">Don't Talk too much</h1>
               <h1 className="home_element_title_1">
                 Let Your Hair Do The Talking
               </h1>
+              <h2 className="home_element_h2_1">
+                Clique com o butão direito do seu rato e deslize para a
+                esquerda.
+              </h2>
             </div>
           </div>
         </>
@@ -114,11 +119,12 @@ const Home = () => {
       elements: (
         <>
           <div className="home_element_container_1">
-            <div className="home_element_title_container">
+            <div className="home_element_title_container_1">
               <h1 className="home_element_title_1">Don't Talk too much</h1>
               <h1 className="home_element_title_1">
                 Let Your Hair Do The Talking
               </h1>
+              <h2 className="home_element_h2_1">Desliza para a esquerda.</h2>
             </div>
           </div>
         </>
@@ -204,6 +210,7 @@ const Home = () => {
           <Swiper items={items_mobile} />
         </div>
       </section>
+      <Footer></Footer>
     </>
   );
 };

@@ -31,7 +31,7 @@
 
 /* RESPONSIVE */
 /*Tablet e Phone*/
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .menu_600px {
     background-image: url('../Img/menu.jpg');
     width: 50px;

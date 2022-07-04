@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Nav from '../componentes/Nav';
 import Footer from '../componentes/Footer';
 import '../css/Review.css';
-import { OpenDirOptions } from 'fs';
 
 interface OpinionModel {
   name: string;
@@ -28,12 +27,12 @@ function Review() {
           <section className="review_Container_1">
             <h1 className="titulos">Escreva a sua opnião!! </h1>
             <input
-              placeholder="Name"
+              placeholder="Nome"
               className="border-2 border-black w-4/5 h-16 mb-8 pl-2"
               onChange={(e) => setName(e.target.value)}
             ></input>
             <textarea
-              placeholder="Message"
+              placeholder="Mensagem"
               className="border-2 border-black w-4/5 h-64 mb-8 pl-2"
               onChange={(e) => setOpinion(e.target.value)}
             ></textarea>

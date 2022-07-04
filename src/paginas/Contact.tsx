@@ -11,11 +11,11 @@ function Contact() {
       <Nav paginaAtual="/Contact"></Nav>
       <section className="contact_body">
         <div className="contact_container">
-          <h1 className="titulos">Contact Me</h1>
+          <h1 className="titulos">Contacta-me</h1>
           {/*-Name-*/}
           <input
             id="name"
-            placeholder="Name"
+            placeholder="Nome"
             className="border-2 border-black w-4/5 h-12 mb-8 pl-2"
             type="text"
           />
@@ -29,20 +29,22 @@ function Contact() {
           {/*-Message-*/}
           <textarea
             id="message"
-            placeholder="Message"
+            placeholder="Mensagem"
             className="border-2 border-black w-4/5 h-52 mb-8 pl-2"
           ></textarea>
-          <button onClick={() => setAberto(true)}>SEND</button>
+          <button onClick={() => setAberto(true)}>Enviar </button>
         </div>
       </section>
 
       {aberto ? (
         <section className="contact_alert" id="contact_alert">
           <div className="contact_box">
-            <h1 className="text-2xl">Your message was sent successfully</h1>
-            <p className="mb-2 mt-4">Click "here" to go back</p>
+            <h1 className="text-2xl text-center">
+              Sua mensagem foi enviada com sucesso
+            </h1>
+            <p className="mb-2 mt-4">Clica "Aqui" para voltar.</p>
             <button className="mt-4" onClick={() => setAberto(false)}>
-              Here
+              Aqui
             </button>
           </div>
         </section>

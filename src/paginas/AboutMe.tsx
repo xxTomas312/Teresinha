@@ -14,9 +14,9 @@ function AboutMe() {
           <h1 className="about_titulo">Olá!</h1>
           <h1 className="about_titulo">O meu nome é Teresa Gonçalves</h1>
           <p className="about_p">
-            Sou uma cabeleireira profissional licenciada procurando ser melhor
-            dia após dia, aprimorando minhas habilidades para deixar minhas
-            clientes mais bonitas e estilosas.
+            Sou uma cabeleireira profissional procurando ser melhor dia após
+            dia, melhorando as minhas habilidades para deixar minhas clientes
+            mais bonitas e estilosas.
           </p>
           <p className="about_p_2">
             Se quiseres ver alguns dos meus trabalhos clica em "Galeria".

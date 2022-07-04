@@ -40,7 +40,7 @@ function Contact() {
         <section className="contact_alert" id="contact_alert">
           <div className="contact_box">
             <h1 className="text-2xl text-center">
-              Sua mensagem foi enviada com sucesso
+              A sua mensagem foi enviada com sucesso.
             </h1>
             <p className="mb-2 mt-4">Clica "Aqui" para voltar.</p>
             <button className="mt-4" onClick={() => setAberto(false)}>

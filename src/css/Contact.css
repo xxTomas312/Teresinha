@@ -28,13 +28,15 @@
 }
 /*When Alert Activated*/
 .contact_box {
-  width: 420px;
+  width: 450px;
   height: 185px;
   display: flex;
   flex-direction: column;
   background-color: var(--white);
   justify-content: center;
   align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0%;
 }
 .contact_alert {
   top: 0%;

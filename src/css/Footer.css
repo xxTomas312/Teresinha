@@ -36,3 +36,17 @@
     transform: scale(110%);
   }
 }
+
+/* RESPONSIVE */
+/*Tablet*/
+@media (max-width: 1200px) {
+  .home_element_title {
+    font-size: var(--big);
+  }
+}
+/*Mobile*/
+@media (max-width: 600px) {
+  .home_element_title {
+    font-size: var(--normal);
+  }
+}

@@ -26,7 +26,7 @@ function Review() {
       <section className="review_body">
         <section className="review_MainContainer">
           <section className="review_Container_1">
-            <h1 className="titulos">Write your Opinion</h1>
+            <h1 className="titulos">Escreva a sua opnião!! </h1>
             <input
               placeholder="Name"
               className="border-2 border-black w-4/5 h-16 mb-8 pl-2"
@@ -43,7 +43,6 @@ function Review() {
           </section>
 
           <section className="review_Container_2">
-            <h1 className="titulos">Clients Opinion</h1>
             <section className="post_container">
               <div className="test">
                 {allOpinions.map((opinionModel: OpinionModel) => (

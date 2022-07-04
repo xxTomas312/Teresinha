@@ -8,3 +8,11 @@
   height: auto;
   user-select: none;
 }
+/*Mobile*/
+@media (max-width: 1700px) {
+  .swiper-img {
+    width: 100%;
+    object-fit: cover;
+    user-select: none;
+  }
+}

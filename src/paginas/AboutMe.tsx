@@ -3,7 +3,7 @@ import Nav from '../componentes/Nav';
 import Footer from '../componentes/Footer';
 import '../css/AboutMe.css';
 import BgImg2 from '../Img/background2.jpeg';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function AboutMe() {
   return (
@@ -14,16 +14,16 @@ function AboutMe() {
           <h1 className="about_titulo">Olá!</h1>
           <h1 className="about_titulo">O meu nome é Teresa Gonçalves</h1>
           <p className="about_p">
-            Sou uma cabeleireira procurando ser um dia melhor a cada dia,
-            aprimorando minhas habilidades para deixar minhas clientes mais
-            bonitas e à moda.
+            Sou uma cabeleireira profissional licenciada procurando ser melhor
+            dia após dia, aprimorando minhas habilidades para deixar minhas
+            clientes mais bonitas e estilosas.
           </p>
           <p className="about_p_2">
-            If you want to see some of my services, click the button below.
+            Se quiseres ver alguns dos meus trabalhos clica em "Galeria".
           </p>
-          <button className="mt-4">
-            <Link to="/Services">Services</Link>
-          </button>
+          <Link to="/Services">
+            <button className="btn">Galeria</button>
+          </Link>
         </div>
         <img src={BgImg2} className="aboutMe_img" />
       </section>

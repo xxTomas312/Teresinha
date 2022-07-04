@@ -8,7 +8,8 @@ function Services() {
     <>
       <Nav paginaAtual="/Services"></Nav>
       <section className="services_body">
-        <div className="container">
+        <div className="main_container">
+          <h1 className="titulos">Galeria</h1>
           <div className="grid_container">
             <div className="grid_item" id="plasticaCapilar">
               <h1 className="grid_text_hover">Plástica Capilar</h1>

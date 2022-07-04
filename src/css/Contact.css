@@ -14,13 +14,17 @@
 
 /*-CONTACT PAGE-*/
 .contact_body {
-  height: 827px;
-}
-.contact_body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid var(--black);
+  height: 827px;
+}
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 /*When Alert Activated*/
 .contact_box {
@@ -43,4 +47,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* RESPONSIVE */
+/*Tablet*/
+@media (max-width: 1200px) {
+  .contact_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .home_element_title {
+    font-size: var(--big);
+  }
+}
+/*Mobile*/
+@media (max-width: 600px) {
+  .contact_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .home_element_title {
+    font-size: var(--normal);
+  }
 }

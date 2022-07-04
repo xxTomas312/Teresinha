@@ -13,24 +13,23 @@
 }
 
 /*-SERVICES PAGE-*/
-
 .services_body {
-  border: 2px solid var(--black);
   width: screen;
-  height: 1200px;
+  height: 1320px;
 }
 
-.container {
+.main_container {
   display: flex;
   width: 100%;
   height: 100%;
+
+  flex-direction: column;
 
   justify-content: center;
   align-items: center;
 }
 
 /* GRID FRAME */
-
 .grid_container {
   display: grid;
   grid-template-columns: 310.5px 310.5px 310.5px 310.5px;
@@ -48,40 +47,53 @@
 .grid_item {
   font-size: 30px;
   text-align: center;
-  border: 2px solid var(--black);
   width: 300px;
   height: 300px;
 
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
+  box-shadow: var(--black2);
+}
+/* Hover: increase */
+.grid_item:hover {
+  animation: increase 0.7s forwards;
+}
+@keyframes increase {
+  0% {
+  }
+  100% {
+    transform: scale(110%);
+  }
+}
+/* Galeria Text */
 .grid_text_hover {
-  opacity: 0%;
   width: 100%;
   height: 100%;
-  border: 2ps solid red;
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--black2);
+  color: var(--textColor);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* Hover: Unshow */
 .grid_text_hover:hover {
-  animation: show 0.3s forwards;
+  animation: unshow 0.3s forwards;
 }
-
-@keyframes show {
+@keyframes unshow {
   0% {
   }
   100% {
-    opacity: 100%;
+    opacity: 0;
     background-color: var(--black2);
     color: var(--textColor);
   }
 }
 
+/* Galeria */
 #plasticaCapilar {
   background-image: url('../Img/plasticaCapilar.jpeg');
 }
@@ -107,7 +119,7 @@
   background-image: url('../Img/cortehomem.jpeg');
 }
 #corteCriança {
-  background-image: url('../Img/criança.webp');
+  background-image: url('../Img/boy.jpg');
 }
 #alisamento {
   background-image: url('../Img/alisamento.jpeg');
@@ -117,4 +129,90 @@
 }
 #madeixas {
   background-image: url('../Img/madeixas.jpeg');
+}
+
+/* RESPONSIVE */
+/*Tablet*/
+@media (max-width: 1430px) {
+  .services_body {
+    width: screen;
+    height: 1600px;
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    padding: 10px;
+    gap: 40px;
+  }
+  .grid_item {
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: var(--black2);
+  }
+  .grid_item:hover {
+    animation: none;
+  }
+  .grid_text_hover:hover {
+    animation: none;
+  }
+}
+@media (max-width: 1000px) {
+  .services_body {
+    width: screen;
+    height: 2200px;
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    padding: 10px;
+    gap: 20px;
+  }
+  .grid_item {
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: var(--black2);
+  }
+}
+
+/*PHONE*/
+@media (max-width: 630px) {
+  .services_body {
+    width: screen;
+    height: 1900px;
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    padding: 10px;
+    gap: 20px;
+  }
+  .grid_item {
+    font-size: 30px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: var(--black2);
+  }
 }

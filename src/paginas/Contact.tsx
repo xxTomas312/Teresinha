@@ -2,28 +2,15 @@ import React, { useState } from 'react';
 import Nav from '../componentes/Nav';
 import Footer from '../componentes/Footer';
 import '../css/Contact.css';
-import { Console } from 'console';
 
 function Contact() {
   const [aberto, setAberto] = useState(false);
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  {
-    /*const onSubmit = (event) => {
-    event.preventDefault();
-    console.log("Name: " + nome);
-    console.log("Name: " + email);
-    console.log("Name: " + message);
-  }*/
-  }
 
   return (
     <>
       <Nav paginaAtual="/Contact"></Nav>
       <section className="contact_body">
-        <div className="flex flex-col justify-center items-center items-center w-1/2 h-full">
+        <div className="contact_container">
           <h1 className="titulos">Contact Me</h1>
           {/*-Name-*/}
           <input

@@ -42,14 +42,6 @@ function Nav({ paginaAtual }: any) {
                 Galeria
               </h1>
             </Link>
-            <Link className="navButton" to="/Review">
-              <h1
-                className="navTitulo"
-                style={paginaAtual === '/Review' ? style : undefined}
-              >
-                Dá uma Opnião
-              </h1>
-            </Link>
           </section>
         </div>
       </nav>
